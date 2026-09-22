@@ -2,15 +2,18 @@ import java.util.Stack;
 
 public class Pilha {
     public static void main(String[] args) {
-        Stack<String> linguagens = new Stack<>();
 
-        linguagens.push("css");
-        linguagens.push("java");
-        linguagens.push("html");
-        linguagens.push("c++");
-        linguagens.push("phython");
+        Stack<String> pilha = new Stack<>();
 
-        for (String linguagem : linguagens) {
+        pilha.push("css");
+        pilha.push("java");
+        pilha.push("html");
+        pilha.push("c++");
+        pilha.push("python");
+
+        while (!pilha.isEmpty()) {
+            String linguagem = pilha.pop();
+
             System.out.println("Dado[ " + linguagem + " ]");
         }
     }
